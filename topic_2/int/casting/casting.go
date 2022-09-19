@@ -3,11 +3,8 @@ package main
 import "fmt"
 
 var (
-	a int
-	b int8
+	b int8 // the same as byte
 	c int16
-	d int32
-	e int64
 )
 
 func main() {
@@ -19,7 +16,7 @@ func main() {
 	// cast from int16 to int8
 	c = 128
 	b = int8(c)
-	fmt.Printf("unexpected result: %T %v \r\n", b, b)
+	fmt.Printf("unexpected result: %T %v \r\n", b, b) // overflow
 
 	// cast from int16 (in int8 range) to int8
 	c = 127

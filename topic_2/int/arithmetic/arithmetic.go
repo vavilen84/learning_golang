@@ -11,6 +11,7 @@ func divInt(n1, n2 int) (res int) {
 	return
 }
 
+// rounding https://yourbasic.org/golang/round-float-2-decimal-places/
 func divFloat32(n1, n2 float32) (res float32) {
 	res = n1 / n2
 	return

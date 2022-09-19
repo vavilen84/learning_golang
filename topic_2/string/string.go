@@ -24,4 +24,14 @@ func main() {
 	for index, runeValue := range nihongo {
 		fmt.Printf("%#U starts at byte position %d\n", runeValue, index)
 	}
+
+	aBytes := []byte(a)
+	aRunes := []rune(a)
+	fmt.Printf("aBytes %v \r\n", aBytes)
+	fmt.Printf("aRunes %v \r\n", aRunes)
+
+	nihongoBytes := []byte(nihongo)
+	nihongoRunes := []rune(nihongo)
+	fmt.Printf("nihongoBytes %v \r\n", nihongoBytes)
+	fmt.Printf("nihongoRunes %v \r\n", nihongoRunes)
 }

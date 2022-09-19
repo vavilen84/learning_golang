@@ -11,4 +11,7 @@ func main() {
 
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	fmt.Println(primes)
+
+	empty := [6]int{}
+	fmt.Printf("%v \r\n", empty)
 }
