@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// https://go.dev/tour/moretypes/25
 func adder() func(int) int {
 	sum := 0
 	return func(x int) int {

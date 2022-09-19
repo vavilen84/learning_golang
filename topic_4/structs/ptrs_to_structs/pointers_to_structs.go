@@ -17,6 +17,6 @@ type B struct {
 func main() {
 	v := B{1, 2}
 	p := &v
-	p.X = 1e9
+	p.X = 1
 	fmt.Println(v)
 }
