@@ -1,4 +1,4 @@
-package main
+package leak
 
 /*
 If we were using an unbuffered pipe, the two slower go routines would be blocked trying to
