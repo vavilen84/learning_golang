@@ -28,6 +28,7 @@ func main() {
 	json.Unmarshal(b, &u)
 	fmt.Printf("Unmarshal %+v \r\n", u)
 
+	u = User{}
 	b = []byte(`{"first_name":"John","last_name":"Dou"} `)
 	json.Unmarshal(b, &u)
 	fmt.Printf("Unmarshal %+v \r\n", u)

@@ -14,5 +14,7 @@ func say(s string) {
 
 func main() {
 	go say("world")
+
+	// TODO: try to comment say
 	say("hello")
 }

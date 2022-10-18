@@ -22,6 +22,8 @@ func main() {
 		fmt.Println("gmain end")
 	}()
 	fmt.Println("sleep")
-	time.Sleep(5 * time.Second)
+
+	// TODO: try to comment
+	//time.Sleep(5 * time.Second)
 	fmt.Println("the end")
 }

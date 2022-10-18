@@ -5,6 +5,8 @@ import (
 	"reflect"
 )
 
+type F float64
+
 func main() {
 	var x float64 = 3.4
 	fmt.Println("x value: ", reflect.ValueOf(x))

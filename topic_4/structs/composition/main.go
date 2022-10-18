@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+type B struct {
+	Data string
+}
+
 type ShippingProvider struct {
 	apiKey string
 }
@@ -15,6 +19,7 @@ func (s *ShippingProvider) GetApiKey() string {
 }
 
 type USPS struct {
+	B
 	ShippingProvider
 	USPSSpecificData string
 }
@@ -25,4 +30,6 @@ func main() {
 	}
 	usps.SetApiKey("sd0987sdf0897sdv0987dsvsd9v0")
 	fmt.Println(usps.GetApiKey())
+	usps.Data = "string"
+
 }

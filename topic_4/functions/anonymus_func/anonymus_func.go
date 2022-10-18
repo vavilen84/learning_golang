@@ -9,7 +9,9 @@ func compute(fn func(float64, float64) float64) float64 {
 }
 
 func main() {
+	a := 123
 	hypot := func(x, y float64) float64 {
+		fmt.Println(a)
 		return x + y
 	}
 	fmt.Println(hypot(5, 12))

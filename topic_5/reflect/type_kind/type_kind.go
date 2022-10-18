@@ -7,9 +7,11 @@ import (
 
 type A struct{}
 type B string
+type C float32
 
 func main() {
 	var x float64 = 3.4
+	//var x C = 3.4
 	fmt.Printf("x type: %v %T \r\n", reflect.TypeOf(x), reflect.TypeOf(x))
 	fmt.Printf("x kind: %v %T \r\n", reflect.TypeOf(x).Kind(), reflect.TypeOf(x).Kind())
 	fmt.Println("x kind equal float64: ", reflect.TypeOf(x).Kind() == reflect.Float64)
